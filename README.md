@@ -4,7 +4,7 @@ Builds the CFTC disaggregated Commitments of Traders dashboard (CFTC + ICE histo
 
 ## Layout
 
-analysis3054/data/cftc_disagg/
+data/
   build_dashboard.py
   update_data.py
   requirements.txt
@@ -16,34 +16,34 @@ analysis3054/data/cftc_disagg/
 ```bash
 python -m venv .venv
 source .venv/bin/activate
-pip install -r analysis3054/data/cftc_disagg/requirements.txt
+pip install -r data/requirements.txt
 ```
 
 ## Build
 
 ```bash
-python analysis3054/data/cftc_disagg/build_dashboard.py
+python data/build_dashboard.py
 ```
 
 ## Inputs
 
-- Cached CFTC text files in `analysis3054/data/cftc_disagg/cache/`
-- ICE history in `analysis3054/data/cftc_disagg/ice_cache/`
-- Optional filters in `analysis3054/data/cftc_disagg/cftc_disagg_eligible_commodities.csv`
+- Cached CFTC text files in `data/cache/`
+- ICE history in `data/ice_cache/`
+- Optional filters in `data/cftc_disagg_eligible_commodities.csv`
 
 ## Outputs
 
-- `analysis3054/data/cftc_disagg/cftc_disagg_dashboard.html`
-- `analysis3054/data/cftc_disagg/cftc_disagg_dashboard_export.html`
-- `analysis3054/data/cftc_disagg/cftc_disagg_dashboard_data.json`
-- `analysis3054/data/cftc_disagg/cftc_disagg_filtered.csv`
-- `analysis3054/data/cftc_disagg/cftc_disagg_scatter_export.csv`
-- `analysis3054/data/cftc_disagg/cftc_disagg_seasonality_export.csv`
+- `data/cftc_disagg_dashboard.html`
+- `data/cftc_disagg_dashboard_export.html`
+- `data/cftc_disagg_dashboard_data.json`
+- `data/cftc_disagg_filtered.csv`
+- `data/cftc_disagg_scatter_export.csv`
+- `data/cftc_disagg_seasonality_export.csv`
 
 ## Update data
 
 ```bash
-python analysis3054/data/cftc_disagg/update_data.py
+python data/update_data.py
 ```
 
 ## Notes
