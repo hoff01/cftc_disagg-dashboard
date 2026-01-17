@@ -1,3 +1,4 @@
-analysis3054>=0.4.2
+analysis3054>=0.4.1
+playwright>=1.45.0
 pandas>=2.0.0
 requests>=2.0.0
