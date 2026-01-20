@@ -1,5 +1,9 @@
 # CFTC Disaggregated Dashboard
 
+## Workspace integration
+
+This repo is expected at `$ANALYSIS3054_DASHBOARD_HOME/dashboard_repos/cftc_disagg`. Automated update/build scripts live in `$ANALYSIS3054_DASHBOARD_HOME/scripts` and use the analysis code from `$ANALYSIS3054_CODEX_HOME` (default `$ANALYSIS3054_DASHBOARD_HOME`).
+
 Builds the CFTC disaggregated Commitments of Traders dashboard (CFTC + ICE history).
 
 ## Layout
